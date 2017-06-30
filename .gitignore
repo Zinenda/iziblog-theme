@@ -3,3 +3,6 @@
 .sass-cache
 _site
 Gemfile.lock
+bower_components
+vendor
+node_modules
