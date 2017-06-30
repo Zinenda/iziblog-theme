@@ -1,0 +1,49 @@
+# SEO
+title: IZIBlog
+email: info@izitag.site
+description: Tecnologia ao seu alcance
+url: ""
+author: "Ivo Zinenda"
+image: /assets/img/brand/logotipo.png
+logo: /assets/img/brand/logo.svg
+
+
+# Build settings
+markdown: kramdown
+
+gems:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - bower_components
+  - vendor
+
+paginate: 12
+paginate_path: /page:num/
+permalink: pretty
+
+# Assets
+sass:
+  style: compressed
+
+# COMPRESS
+compress_html:
+  clippings: all
+  endings: all
+comments: ["<!--", "-->"]
+
+# defaults
+defaults:
+  - scope:
+        path: ""
+        type: posts
+    values:
+        image: ""
+        categories: []
+        description: ""
+        author: ""
