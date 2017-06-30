@@ -1,0 +1,7 @@
+<ul class="inline-list">
+    {% for item in site.data.social %}
+        <li>
+            <a href="{{ item.link }}" title="{{ item.name }}" class="btn-floating btn-flat"><i class="fa fa-{{ item.name }}"></i></a>
+        </li>
+    {% endfor %}
+</ul>

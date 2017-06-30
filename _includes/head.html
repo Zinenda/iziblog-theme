@@ -1,0 +1,39 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Color the status bar on mobile devices -->
+    <meta name="theme-color" content="#cc3333">
+
+    <meta name="author" content="{{ site.author }}">
+    <meta name="reply-to" content="{{ site.email }}">
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="{{ site.title }}">
+    <link rel="icon" sizes="192x192" href="{{ site.logo }}">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="{{ site.title }}">
+    <link rel="apple-touch-icon" href="{{ site.logo }}">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="{{ site.logo }}">
+    <meta name="msapplication-TileColor" content="#fff">
+
+    {% seo %}
+
+    <link rel="icon" href="/favicon.png">
+    <link rel="apple-touch-icon" href="{{ site.logo }}">
+
+    {% include scssify.html %}
+</head>

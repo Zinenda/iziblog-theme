@@ -1,0 +1,25 @@
+<footer class="page-footer white-text">
+    <div class="container">
+        <div class="row">
+            <div id="sobre" class="col s12 l6 scrollspy">
+                <h3 class="light center-on-small-only">Quem Somos</h3>
+                <p class="light center-on-small-only">
+                    {% include footer-about.html %}
+                </p>
+            </div>
+
+            <div class="col s12 l6">
+                <h3 class="light center-on-small-only">Socialize-se</h3>
+                <div class="center-on-small-only">
+                    {% include social.html %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright">
+        <div class="container">
+            <div class="center">&copy; {{ site.time | date: "%Y" }} {{ site.title }} - {{ site.description }} Powered by <a href="http://izitag.site" title="IZItag">IZItag</a></div>
+        </div>
+    </div>
+</footer>

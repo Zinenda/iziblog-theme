@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="center">
+        <div class="col s6">
+            {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path }}" class="btn-large waves-effect waves-light"><i class="fa fa-5x fa-chevron-left"></i></a>
+            {% endif %}
+        </div>
+
+        <div class="col s6">
+            {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path }}" class="btn-large waves-effect waves-light"><i class="fa fa-5x fa-chevron-right"></i></a>
+            {% endif %}
+        </div>
+    </div>
+</div>
