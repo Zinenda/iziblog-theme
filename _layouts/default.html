@@ -1,1 +1,18 @@
-{{ content }}
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html dir="ltr" lang="pt">
+    {% include head.html %}
+
+    <body id="top">
+        {% include navbar.html %}
+
+        <main class="animate-bottom">
+            {{ content }}
+            {% include fab.html %}
+        </main>
+        {% include footer.html %}
+        {% include fonts.html %}
+        {% include scripts.html %}
